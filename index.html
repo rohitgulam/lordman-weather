@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherApp</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      .container{
+        width:90%;
+        margin: 10 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top:70px;
+        padding-top:40px;
+        color: white;
+      }
+      body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-image: url(image/weather4.jpg);
+        background-size: cover;
+        width: 100%;
+      }
+
+      
+      h1{
+        color: white;
+      }
+
+      label{
+        font-size: 22px;
+      }
+
+      .city-input{
+        padding: 10px 18px;
+        font-size: 20px;
+        border-radius: 4px;
+      }
+
+      .input-btn{
+        font-size: 20px;
+        padding: 12px 30px;
+      }
+      
+      table{
+        width: 500px;
+        font-size: 18px;
+        text-align: left;
+      }
+
+      th{
+        padding: 6px 0;
+      }
+      </style>
+</head>
+<body>
+  <div class="container">
+    <div class="div">
+      <h1>Search Global Weather</h1>
+        <form id="weather-form">
+          <div class="form">
+            <label for="city">Enter City Name</label><br>
+              <input class="city-input" type="text" name="city" id="city"><br>
+              <br><button class="input-btn" type="submit">Submit</button>
+              </div>
+        
+
+            <div >
+
+                 <!-- <h1 class="output" id="cityname"></h1>
+                 <h2 class="output" id="country"></h2>
+                 <h3 class="output" id="windspeed"> </h3>
+                 <h4 class="output" id="lat"></h4>
+                 <h5 class="output" id="log"></h5>
+                 <h6 class="output" id="temp"></h6> -->
+
+                <h2>The weather is: <span id="weather"></span></h2>
+                <table>
+                  <tr>
+                    <th>Weather Property</th>
+                    <th>Value</th>
+                  </tr>
+                  <tr>
+                    <th>City</th>
+                    <td> <span id="cityname"></span> <span id="country"></span> </td>
+                  </tr>
+                  <tr>
+                    <th>Temperature in Fahrenheit</th>
+                    <td><span id="temp"></span></td>
+                  </tr>
+                  <tr>
+                    <th>Humidity</th>
+                    <td><span id="humidity"></span></td>
+                  </tr>
+                  <tr>
+                    <th>Windspeed</th>
+                    <td><span id="windspeed"></span></td>
+                  </tr>
+                  <tr>
+                    <th>Latitude</th>
+                    <td><span id="lat"></span></td>
+                  </tr>
+                  <tr>
+                    <th>Longitude</th>
+                    <td><span id="log"></span></td>
+                    <th>rain</th>
+                    <td><span id="rain"></span></td>
+                  </tr>
+                </table>
+                 
+                 
+                 
+              </div>
+               </div>
+        </form>        
+    </div>       
+
+
+    <script src="index.js"></script>
+</body>  
+</html>
